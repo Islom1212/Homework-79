@@ -25,29 +25,29 @@
 // //
 // //
 
-// // Challenge 2: Object methods
-// // Type: (obj: { [key: string]: any }) => string[]
-// type User = {
-//   name: string;
-//   age: number;
-//   country: string;
-//   isActive: boolean;
-// };
-// const user = {
-//   name: "Ali",
-//   age: 25,
-//   country: "Uzbekistan",
-//   isActive: true,
-// };
+// Challenge 2: Object methods
+// Type: (obj: { [key: string]: any }) => string[]
+type User = {
+  name: string;
+  age: number;
+  country: string;
+  isActive: boolean;
+};
+const user = {
+  name: "Ali",
+  age: 25,
+  country: "Uzbekistan",
+  isActive: true,
+};
 
-// function getStringValues(obj: User) {
-//   return Object.keys(obj)
-//     .filter((key) => typeof obj[key as keyof typeof obj] === "string")
-//     .map((key) => obj[key as keyof typeof obj]);
-//   // TODO: Object.values ishlatib, faqat string qiymatlarni qaytaring
-// }
+function getStringValues(obj: User) {
+  return Object.keys(obj)
+    .filter((key) => typeof obj[key as keyof typeof obj] === "string")
+    .map((key) => obj[key as keyof typeof obj]);
+  // TODO: Object.values ishlatib, faqat string qiymatlarni qaytaring
+}
 
-// console.log(getStringValues(user));
+console.log(getStringValues(user));
 
 // //
 // //
@@ -112,13 +112,13 @@
 // });
 
 // console.log("processData result:", doubled);
+ 
+// 
+// 
+//
 
-// //
-// //
-// //
-
-// // Challenge 6: Declaration vs Expression vs Arrow
-// // Type: (n: number) => number
+// Challenge 6: Declaration vs Expression vs Arrow
+// Type: (n: number) => number
 
 // // 1. Function Declaration
 // function square1(n: number) {
