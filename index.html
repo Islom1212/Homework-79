@@ -19,7 +19,7 @@
       <div class="hidden xl:flex xl:gap-[43px]">
         <p class="text-[18px] text-[#737373] font-medium">Home</p>
         <p class="text-[18px] text-black font-medium">
-          <a href="about.html">Pages</a>
+          <a href="/pages/about.html">Pages</a>
         </p>
         <p class="text-[18px] text-[#737373] font-medium">Event</p>
         <p class="text-[18px] text-[#737373] font-medium">Portfolio</p>
@@ -545,49 +545,88 @@
 
     <!--Footer section-->
     <div
-      class="bg-[url(/public/bg-image-event.jpg)] relative left-[-24px] w-[114.7%] mt-[106px] py-[48px] px-[24px] flex flex-col gap-[48px] text-white"
+      class="bg-[url(/public/bg-image-event.jpg)] relative left-[-24px] w-[114.7%] mt-[106px] py-[48px] px-[24px] flex flex-col gap-[48px] text-white xl:mt-[247px] xl:w-[135.2%] xl:left-[-250px] xl:flex-row xl:gap-[90px] xl:py-[130px] xl:px-[250px]"
     >
       <div class="flex flex-col gap-[24px]">
-        <div class="flex flex-col">
-          <p class="text-[36px] text-center">Crafting</p>
-          <p class="text-[36px] text-center text-[#FFD67E]">Extraordinary</p>
-          <p class="text-[36px] text-center">Events Together</p>
+        <div class="flex flex-col xl:items-center">
+          <p class="text-[36px] text-center xl:text-7xl">Crafting</p>
+          <p
+            class="text-[36px] text-center xl:text-7xl text-[#FFD67E] xl:hidden"
+          >
+            Extraordinary
+          </p>
+          <p class="text-[36px] text-center xl:text-7xl xl:hidden">
+            Events Together
+          </p>
+          <p
+            class="text-[36px] text-center xl:text-7xl hidden text-[#FFD67E] xl:flex"
+          >
+            Extraordinary <span class="text-white xl:pl-[20px]">Events</span>
+          </p>
+          <p class="text-[36px] text-center xl:text-7xl hidden xl:flex">
+            Together
+          </p>
         </div>
-        <p class="text-[16px] text-center text-[#D4D4D4] w-[339px]">
+        <p
+          class="text-[16px] text-center text-[#D4D4D4] w-[339px] xl:text-[18px] xl:w-[655px] xl:text-start"
+        >
           Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitacion
           ullamco. sed do euismod tempor incidunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitacion ullamco  
         </p>
-        <div class="flex flex-row items.center justify-center gap-[18px]">
+        <div
+          class="flex flex-row items-center justify-center gap-[18px] xl:justify-start"
+        >
           <img src="/public/facebook-acon.svg" alt="" />
           <img src="/public/x-com-icon.svg" alt="" />
           <img src="/public/you-tube-icon.svg" alt="" />
         </div>
       </div>
-      <div class="flex flex-col gap-[15px]">
-        <p class="text-[20px] text-[#FFD67E] text-center">Links</p>
-        <p class="text-[16px] text-center">Homepage</p>
-        <p class="text-[16px] text-center">Pages</p>
-        <p class="text-[16px] text-center">Event</p>
-        <p class="text-[16px] text-center">Portfolio</p>
-        <p class="text-[16px] text-center">Blog</p>
-        <p class="text-[16px] text-center">Shop</p>
-        <p class="text-[16px] text-center">Contact us</p>
+      <div class="flex flex-col gap-[15px] xl:gap-[17px]">
+        <p class="text-[20px] text-[#FFD67E] text-center xl:text-[24px]">
+          Links
+        </p>
+        <p class="text-[16px] text-center xl:text-[22px]">Homepage</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Pages</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Event</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Portfolio</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Blog</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Shop</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Contact us</p>
       </div>
-      <div class="flex flex-col gap-[]">
-        <p class="text-[22px] text-[#FFD67E]">
+      <div class="flex flex-col xl:gap-[28px]">
+        <p class="text-[22px] text-[#FFD67E] xl:text-[32px]">
           Subscribe For Our Blog & Article
         </p>
-        <div class="flex flex-col gap-[10px] bg-[#404040]">
-          <input type="text" />
+        <div
+          class="flex items-center justify-between px-[5px] gap-[10px] bg-[#404040] h-[49px] rounded-[30px] xl:w-[472px] xl:h-[71px]"
+        >
+          <input
+            class="ml-[25px] text-[12px] xl:text-[20px] xl:ml-[44px]"
+            placeholder="your email here"
+            type="email"
+          />
           <button
-            class="w-[106px] h-[40px] bg-[#FFD67E] text-[14px] text-black rounded-[30px]"
+            class="w-[106px] h-[40px] bg-[#FFD67E] text-[14px] text-black rounded-[30px] xl:h-[59px] xl:w-[156px] xl:text-[18px]"
           >
             Subscribe
           </button>
         </div>
       </div>
+    </div>
+    <div
+      class="bg-[#171717] h-[102px] w-[114.7%] flex flex-col items-center py-[11px] px-[24px] relative left-[-24px] gap-[18px] xl:flex-row xl:w-[135.2%] xl:left-[-250px] xl:py-[24px] xl:px-[250px] xl:justify-between"
+    >
+      <img
+        class="w-[100px] h-[38px] xl:w-[139px] xl:y-[53px]"
+        src="/public/Logo.svg"
+        alt="logo"
+      />
+
+      <p class="text-[14px] text-white xl:text-[18px]">
+        Copyright © 2024 Rometheme. All Rights Reserved.
+      </p>
     </div>
 
     <!--TYPE SCRIPT-->
