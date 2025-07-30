@@ -9,7 +9,7 @@
   <body>
     <!--Menu's section-->
     <div
-      class="flex justify-between items-center w-[100%] mb-[12px] py-[23px] px-[249px]"
+      class="flex justify-between items-center w-[100%] mb-[12px] py-[23px] px-[24px]"
     >
       <img
         class="w-[94px] h-[36px] xl:w-[139px] xl:h-[53px]"
@@ -49,9 +49,565 @@
     </div>
 
     <!--Header section-->
-    <div class="flex flex-col gap-[]"></div>
+    <div class="flex flex-col gap-[32px] items-center px-[24px] xl:px-[250px]">
+      <h1 class="text-[36px] xl:text-7xl">Upcoming Events</h1>
+      <div class="flex gap-[8px]">
+        <div
+          class="flex items-center bg-[#FFF5DE] py-[4px] px-[4px] rounded-[30px] w-[210px] h-[35px] xl:w-[1100px] xl:h-[90px] xl:rounded-[100px] xl:justify-between"
+        >
+          <input
+            class="ml-[10px] w-[94px] h-[20px] text-[12px] xl:text-[18px] xl:ml-[32px] xl:w-full xl:h-[35px]"
+            type="text"
+            placeholder="Search"
+          />
+          <button
+            class="bg-[#FFD67E] rounded-[30px] py-[5.5px] px-[7.94px] flex items-center text-[12px] gap-[3px] xl:w-[182px] xl:h-[75px] xl:rounded-[100px] xl:text-[18px] xl:py-[22px] xl:px-[27px]"
+          >
+            <img
+              class="xl:w-[24px] xl:h-[24px]"
+              src="/public/search.svg"
+              alt="search"
+            />
+            Find Events
+          </button>
+        </div>
+        <div
+          class="flex items-start gap-[19px] w-[124px] xl:w-[241px] xl:justify-around xl:items-center xl:ml-[20px]"
+        >
+          <p class="text-[#525252] text-[14px] xl:text-[20px]">List</p>
+          <p class="text-[#525252] text-[14px] xl:text-[20px]">Month</p>
+          <p class="text-[#525252] text-[14px] xl:text-[20px]">Day</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-[12px] w-[342px] items-center xl:w-full xl:pl-[20px]"
+      >
+        <p class="text-center w-[76px] text-[18px] xl:text-[26px] xl:w-[163px]">
+          October 2024
+        </p>
+        <div class="w-[63px] h-[1px] bg-gray-500 xl:w-[957px]"></div>
+        <button
+          class="w-[211px] bg-[#FFD67E] rounded-[100px] h-[48px] py-[4px] px-[10px] flex items-center justify-around gap-[10px] xl:w-[252px] xl:h-[56px] xl:text-[18px] xl:px-[23px]"
+        >
+          Subscribe to calendar
+          <img
+            class="w-[18px] h-[18px] xl:w-[24px] xl:h-[24px]"
+            src="/public/arrow-b.svg"
+            alt="arrow"
+          />
+        </button>
+      </div>
+      <div class="flex flex-col items-center xl:flex-row xl:gap-[100px]">
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Tue 1
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-1.svg" alt="image" />
+            <p class="text-[16px] xl:text-[24px]">Featured</p>
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            $70
+          </p>
+        </div>
+
+        <img
+          class="mt-[20px] xl:hidden"
+          src="/public/bg-image-event-1.png"
+          alt="image"
+        />
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-1-1.png"
+          alt="image"
+        />
+      </div>
+      <div class="flex flex-col items-center xl:flex-row xl:gap-[100px]">
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Web 4
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            $85
+          </p>
+        </div>
+
+        <img
+          class="mt-[20px] xl:hidden"
+          src="/public/bg-image-event-2.png"
+          alt="image"
+        />
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-2-2.png"
+          alt="image"
+        />
+      </div>
+      <div class="flex flex-col items-center xl:flex-row xl:gap-[100px]">
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Thu 6
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Free
+          </p>
+        </div>
+
+        <img
+          class="mt-[20px] xl:hidden"
+          src="/public/bg-image-event-3.png"
+          alt="image"
+        />
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-3-3.png"
+          alt="image"
+        />
+      </div>
+      <div
+        class="hidden flex-col items-center xl:flex-row xl:gap-[100px] xl:flex"
+      >
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Sat 12
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Sold out
+          </p>
+        </div>
+
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-4.png"
+          alt="image"
+        />
+      </div>
+      <div
+        class="hidden flex-col items-center xl:flex-row xl:gap-[100px] xl:flex"
+      >
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Sat 12
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Sold out
+          </p>
+        </div>
+
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-5.png"
+          alt="image"
+        />
+      </div>
+      <div
+        class="hidden flex-col items-center xl:flex-row xl:gap-[100px] xl:flex"
+      >
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Sat 12
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Sold out
+          </p>
+        </div>
+
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-6.png"
+          alt="image"
+        />
+      </div>
+      <div
+        class="hidden flex-col items-center xl:flex-row xl:gap-[100px] xl:flex"
+      >
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Sat 12
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Sold out
+          </p>
+        </div>
+
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-7.png"
+          alt="image"
+        />
+      </div>
+      <div
+        class="hidden flex-col items-center xl:flex-row xl:gap-[100px] xl:flex"
+      >
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Sat 12
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Sold out
+          </p>
+        </div>
+
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-8.png"
+          alt="image"
+        />
+      </div>
+      <div
+        class="hidden flex-col items-center xl:flex-row xl:gap-[100px] xl:flex"
+      >
+        <p
+          class="text-[24px] w-[56px] text-center xl:text-start xl:text-[30px]"
+        >
+          Sat 12
+        </p>
+
+        <div class="hidden xl:flex"></div>
+
+        <div class="flex flex-col gap-[12px] xl:gap-[24px] mt-[18px]">
+          <div class="flex flex-col items-center gap-[12px] xl:flex-row">
+            <img src="/public/qwert-2.svg" alt="image" />
+            <p
+              class="text-[16px] text-[#525252] w-[175px] xl:w-[401px] xl:text-[18px]"
+            >
+              Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+            </p>
+          </div>
+
+          <p class="text-[24px] text-center xl:text-start xl:text-[30px]">
+            Street Food Festival
+          </p>
+          <p class="text-[18px] text-center xl:text-start xl:text-[24px]">
+            Eventicity Club 8 E 9th Street, Chicago, IL, United States
+          </p>
+          <p
+            class="text-[16px] text-[#5C5C5C] text-center xl:text-start xl:text-[18px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam. Sed ut
+            perspiciatis unde omnis iste natus.
+          </p>
+          <p class="text-[20px] text-center xl:text-start xl:text-[30px]">
+            Sold out
+          </p>
+        </div>
+
+        <img
+          class="hidden xl:flex"
+          src="/public/bg-image-event-10.png"
+          alt="image"
+        />
+      </div>
+
+      <div
+        class="h-[1px] w-full bg-gray-500 hidden mt-[64px] mb-[32px] xl:flex"
+      ></div>
+      <img class="hidden xl:flex" src="/public/event-ft-1.svg" alt="image" />
+      <img class="xl:hidden" src="/public/event-ft-2.svg" alt="image" />
+    </div>
+
+    <!--Footer section-->
+    <div
+      class="bg-[url(/public/bg-image-event.jpg)] w-[100%] mt-[50px] py-[48px] px-[24px] flex flex-col gap-[48px] text-white xl:mt-[100px] xl:flex-row xl:gap-[90px] xl:py-[130px] xl:px-[250px]"
+    >
+      <div class="flex flex-col gap-[24px]">
+        <div class="flex flex-col xl:items-center">
+          <p class="text-[36px] text-center xl:text-7xl">Crafting</p>
+          <p
+            class="text-[36px] text-center xl:text-7xl text-[#FFD67E] xl:hidden"
+          >
+            Extraordinary
+          </p>
+          <p class="text-[36px] text-center xl:text-7xl xl:hidden">
+            Events Together
+          </p>
+          <p
+            class="text-[36px] text-center xl:text-7xl hidden text-[#FFD67E] xl:flex"
+          >
+            Extraordinary <span class="text-white xl:pl-[20px]">Events</span>
+          </p>
+          <p class="text-[36px] text-center xl:text-7xl hidden xl:flex">
+            Together
+          </p>
+        </div>
+        <p
+          class="text-[16px] text-center text-[#D4D4D4] w-[339px] xl:text-[18px] xl:w-[655px] xl:text-start"
+        >
+          Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitacion
+          ullamco. sed do euismod tempor incidunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitacion ullamco  
+        </p>
+        <div
+          class="flex flex-row items-center justify-center gap-[18px] xl:justify-start"
+        >
+          <img src="/public/facebook-acon.svg" alt="" />
+          <img src="/public/x-com-icon.svg" alt="" />
+          <img src="/public/you-tube-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-[15px] xl:gap-[17px]">
+        <p class="text-[20px] text-[#FFD67E] text-center xl:text-[24px]">
+          Links
+        </p>
+        <p class="text-[16px] text-center xl:text-[22px]">Homepage</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Pages</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Event</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Portfolio</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Blog</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Shop</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Contact us</p>
+      </div>
+      <div class="flex flex-col xl:gap-[28px]">
+        <p class="text-[22px] text-[#FFD67E] xl:text-[32px]">
+          Subscribe For Our Blog & Article
+        </p>
+        <div
+          class="flex items-center justify-between px-[5px] gap-[10px] bg-[#404040] h-[49px] rounded-[30px] xl:w-[472px] xl:h-[71px]"
+        >
+          <input
+            class="ml-[25px] text-[12px] xl:text-[20px] xl:ml-[44px]"
+            placeholder="your email here"
+            type="email"
+          />
+          <button
+            class="w-[106px] h-[40px] bg-[#FFD67E] text-[14px] text-black rounded-[30px] xl:h-[59px] xl:w-[156px] xl:text-[18px]"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-[#171717] h-[102px] w-[100%] flex flex-col items-center py-[11px] px-[24px] gap-[18px] xl:flex-row xl:py-[24px] xl:px-[250px] xl:justify-between"
+    >
+      <img
+        class="w-[100px] h-[38px] xl:w-[139px] xl:y-[53px]"
+        src="/public/Logo.svg"
+        alt="logo"
+      />
+
+      <p class="text-[14px] text-white xl:text-[18px]">
+        Copyright © 2024 Rometheme. All Rights Reserved.
+      </p>
+    </div>
 
     <!--Type Script-->
-    <script src="../src/main.ts"></script>
+    <script type="module" src="../src/main.ts"></script>
   </body>
 </html>
