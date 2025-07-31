@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>PDP-21 Counter</title>
+  </head>
+  <body class="px-[24px] pt-[28px] xl:px-[250px] xl:pt-[23px]">
+    <!--Menu's section-->
+    <div class="flex justify-between items-center w-[100%] mb-[12px]">
+      <img
+        class="w-[94px] h-[36px] xl:w-[139px] xl:h-[53px]"
+        src="./public/Logo.svg"
+        alt="Logo"
+      />
+
+      <div class="hidden xl:flex xl:gap-[43px]">
+        <p class="text-[18px] text-[#737373] font-medium"><a href="pages/home.html">Home</a></p>
+        <p class="text-[18px] text-black font-medium">
+          <a href="/pages/about.html">Pages</a>
+        </p>
+        <p class="text-[18px] text-[#737373] font-medium">
+          <a href="/pages/service.html">Services</a>
+        </p>
+        <p class="text-[18px] text-[#737373] font-medium">
+          <a href="/pages/event.html">Event</a>
+        </p>
+        <p class="text-[18px] text-[#737373] font-medium">
+          <a href="/pages/portfolio.html">Portfolio</a>
+        </p>
+        <p class="text-[18px] text-[#737373] font-medium">Blog</p>
+      </div>
+
+      <div class="hidden xl:flex xl:gap-[20px]">
+        <button
+          class="text-[18px] border-1 border-[#FFD67E] rounded-[30px] py-[11.5px] px-[40px]"
+        >
+          Log in
+        </button>
+        <button
+          class="text-[18px] bg-[#FFD67E] border-none border-1 rounded-[30px] py-[11.5px] px-[40px]"
+        >
+          Sign up
+        </button>
+      </div>
+
+      <img class="lg:hidden" src="./public/menus.svg" alt="Menus" />
+    </div>
+
+    <!--Header section-->
+    <nav
+      class="bg-[#FFF9ED] py-[31.5px] px-[24px] w-[114.7%] relative left-[-24px] flex flex-col items-center justify-center gap-[24px] xl:w-[135.19%] xl:left-[-250px] xl:gap-[120px] xl:py-[70px]"
+    >
+      <h1 class="text-[36px] xl:text-7xl">Our Services</h1>
+
+      <div
+        class="snap-x overflow-x-scroll w-[249px] flex justify-between xl:w-[1420px]"
+      >
+        <div
+          class="snap-start flex flex-col items-center justify-center gap-[12px]"
+        >
+          <img
+            class="w-[100px] h-[100px] xl:w-[58px] xl:h-[58px]"
+            src="./public/menu-svg-1.svg"
+            alt="menu-svg"
+          />
+
+          <div class="flex flex-col items-center justify-center gap-[12px]">
+            <p class="text-[28px] xl:text-[30px]">Location</p>
+            <p class="text-[18px] text-[#525252] w-[249px] text-center">
+              Adipiscing elit, sed do euismod tempor incidunt ut labore
+            </p>
+          </div>
+        </div>
+        <div
+          class="snap-start flex flex-col items-center justify-center gap-[12px]"
+        >
+          <img
+            class="w-[100px] h-[100px] xl:w-[58px] xl:h-[58px]"
+            src="./public/menu-svg-2.svg"
+            alt="menu-svg"
+          />
+
+          <div class="flex flex-col items-center justify-center gap-[12px]">
+            <p class="text-[28px] xl:text-[30px]">Location</p>
+            <p class="text-[18px] text-[#525252] w-[249px] text-center">
+              Adipiscing elit, sed do euismod tempor incidunt ut labore
+            </p>
+          </div>
+        </div>
+        <div
+          class="snap-start flex flex-col items-center justify-center gap-[12px]"
+        >
+          <img
+            class="w-[100px] h-[100px] xl:w-[58px] xl:h-[58px]"
+            src="./public/menu-svg-3.svg"
+            alt="menu-svg"
+          />
+
+          <div class="flex flex-col items-center justify-center gap-[12px]">
+            <p class="text-[28px] xl:text-[30px]">Location</p>
+            <p class="text-[18px] text-[#525252] w-[249px] text-center">
+              Adipiscing elit, sed do euismod tempor incidunt ut labore
+            </p>
+          </div>
+        </div>
+        <div
+          class="snap-start flex flex-col items-center justify-center gap-[12px]"
+        >
+          <img
+            class="w-[100px] h-[100px] xl:w-[58px] xl:h-[58px]"
+            src="./public/menu-svg-4.svg"
+            alt="menu-svg"
+          />
+
+          <div class="flex flex-col items-center justify-center gap-[12px]">
+            <p class="text-[28px] xl:text-[30px]">Location</p>
+            <p class="text-[18px] text-[#525252] w-[249px] text-center">
+              Adipiscing elit, sed do euismod tempor incidunt ut labore
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Event section-->
+    <div
+      class="bg-[url(/public/bg-image-event.jpg)] text-white h-auto py-[40px] px-[24px] w-[114.7%] relative left-[-24px] flex flex-col items-center justify-center gap-[48px] xl:w-[135.19%] xl:left-[-250px] xl:gap-[64px] xl:py-[114px] xl:px-[250px]"
+    >
+      <div
+        class="flex flex-col items-center justify-between gap-[32px] xl:flex-row xl:w-[1420px]"
+      >
+        <h1
+          class="text-[36px] text-center xl:text-7xl xl:text-start xl:w-[900px]"
+        >
+          Full-service event production
+        </h1>
+        <button
+          class="bg-[#27272A] rounded-[30px] px-[20.39px] py-[12px] flex gap-[8px] xl:w-[190px] xl:h-[56px] xl:text-[18px] xl:py-[14px] xl:px-[27.8px]"
+        >
+          View Details <img src="./public/arrow.svg" alt="arrow" />
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-[64px] xl:gap-[100px] xl:mt-[48px]">
+        <div
+          class="flex flex-col gap-[24px] items-center justify-center xl:flex-row xl:justify-between xl:gap-[378px]"
+        >
+          <p
+            class="text-[#FFD67E] text-[28px] leading-[150%] tracking-normal text-center font-normal h-[84px] xl:text-6xl xl:flex xl:gap-[40px] xl:w-[535px]"
+          >
+            <span class="block">01.</span>
+            <span class="block">Event Planning</span>
+          </p>
+
+          <div
+            class="flex items-center flex-col gap-[24px] xl:justify-center xl:gap-[64px] xl:flex-row"
+          >
+            <p
+              class="w-[353px] text-[16px] text-[#A3A3A3] xl:text-[18px] xl:w-[477px]"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam. Sed ut
+              perspiciatis unde omnis iste natus.
+            </p>
+            <img
+              class="w-[40px] h-[40px]"
+              src="./public/arrow-2.svg"
+              alt="arrow-2"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] items-center justify-center xl:flex-row xl:justify-between xl:gap-[378px]"
+        >
+          <p
+            class="text-white text-[28px] leading-[150%] tracking-normal text-center font-normal h-[84px] xl:text-6xl xl:flex xl:gap-[40px] xl:w-[567px]"
+          >
+            <span class="block">02.</span>
+            <span class="block">Corporate Event</span>
+          </p>
+
+          <div
+            class="flex items-center flex-col gap-[24px] xl:justify-center xl:gap-[64px] xl:flex-row"
+          >
+            <p
+              class="w-[353px] text-[16px] text-[#A3A3A3] xl:text-[18px] xl:w-[477px]"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam. Sed ut
+              perspiciatis unde omnis iste natus.
+            </p>
+            <img
+              class="w-[40px] h-[40px]"
+              src="./public/arrow-2.svg"
+              alt="arrow-2"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] items-center justify-center xl:flex-row xl:justify-between xl:gap-[378px]"
+        >
+          <p
+            class="text-white text-[28px] leading-[150%] tracking-normal text-center font-normal h-[84px] xl:text-6xl xl:flex xl:gap-[40px] xl:w-[545px]"
+          >
+            <span class="block">03.</span>
+            <span class="block">Wedding Event</span>
+          </p>
+
+          <div
+            class="flex items-center flex-col gap-[24px] xl:justify-center xl:gap-[64px] xl:flex-row"
+          >
+            <p
+              class="w-[353px] text-[16px] text-[#A3A3A3] xl:text-[18px] xl:w-[477px]"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam. Sed ut
+              perspiciatis unde omnis iste natus.
+            </p>
+            <img
+              class="w-[40px] h-[40px]"
+              src="./public/arrow-2.svg"
+              alt="arrow-2"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] items-center justify-center xl:flex-row xl:justify-between xl:gap-[378px]"
+        >
+          <p
+            class="text-white text-[28px] leading-[150%] tracking-normal text-center font-normal h-[84px] xl:text-6xl xl:flex xl:gap-[40px] xl:w-[535px]"
+          >
+            <span class="block">04.</span>
+            <span class="block">Private Party</span>
+          </p>
+
+          <div
+            class="flex items-center flex-col gap-[24px] xl:justify-center xl:gap-[64px] xl:flex-row"
+          >
+            <p
+              class="w-[353px] text-[16px] text-[#A3A3A3] xl:text-[18px] xl:w-[477px]"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam. Sed ut
+              perspiciatis unde omnis iste natus.
+            </p>
+            <img
+              class="w-[40px] h-[40px]"
+              src="./public/arrow-2.svg"
+              alt="arrow-2"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] items-center justify-center xl:flex-row xl:justify-between xl:gap-[378px]"
+        >
+          <p
+            class="text-white text-[28px] leading-[150%] tracking-normal text-center font-normal h-[84px] xl:text-6xl xl:flex xl:gap-[40px] xl:w-[535px]"
+          >
+            <span class="block">05.</span>
+            <span class="block">Birthday Party</span>
+          </p>
+
+          <div
+            class="flex items-center flex-col gap-[24px] xl:justify-center xl:gap-[64px] xl:flex-row"
+          >
+            <p
+              class="w-[353px] text-[16px] text-[#A3A3A3] xl:text-[18px] xl:w-[477px]"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam. Sed ut
+              perspiciatis unde omnis iste natus.
+            </p>
+            <img
+              class="w-[40px] h-[40px]"
+              src="./public/arrow-2.svg"
+              alt="arrow-2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--IMAGES SECTION-->
+    <div
+      class="snap-x overflow-x-scroll w-auto mt-[48px] h-[366px] flex justify-between gap-[40px] xl:relative xl:w-[135.19%] xl:left-[-250px] xl:mt-[0px] xl:h-[770px]"
+    >
+      <img src="./public/image-s-1.png" alt="image-1" />
+      <img src="./public/image-s-2.png" alt="image-2" />
+      <img src="./public/image-s-3.png" alt="image-3" />
+      <img src="./public/image-s-4.png" alt="image-4" />
+    </div>
+
+    <!--PRICING section-->
+    <div
+      class="mt-[70px] relative w-[114.7%] left-[-24px] xl:w-[135.19%] xl:left-[-250px] xl:h-[814px]"
+    >
+      <img
+        class="xl:h-[814px] xl:w-[135.19%]"
+        src="./public/Frame 1.png"
+        alt="frame-1"
+      />
+    </div>
+
+    <div
+      class="bg-[#FFF9ED] pt-[48px] flex flex-col items-center relative w-[114.7%] left-[-24px] xl:w-[135.19%] xl:left-[-250px] xl:h-[814px] xl:pt-[130px]"
+    >
+      <div class="flex flex-col items-center justify-center gap-[24px]">
+        <p class="text-[36px] xl:text-7xl">Pricing</p>
+        <p
+          class="text-center text-[16px] text-[#5C5C5C] w-[352px] xl:text-[18px] xl:w-[502px]"
+        >
+          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim.
+        </p>
+      </div>
+
+      <div
+        class="snap-x overflow-x-auto w-[80%] mt-[48px] h-[366px] gap-[50px] flex items-center justify-between xl:mt-[0px] xl:h-[770px] xl:w-[80%]"
+      >
+        <div
+          class="snap-start rounded-[30px] border flex flex-col gap-[77px] px-[63px] py-[39px] bg-white w-[341px] h-[341px] xl:w-[453px] xl:h-[452px] xl:py-[64px] xl:px-[84px] xl:justify-between"
+        >
+          <div class="flex flex-col items-center gap-[24px]">
+            <button
+              class="rounded-[30px] bg-[#FFF5DE] py-[10px] px-[36px] text-[16px] xl:py-[13px] xl:px-[51px] xl:text-[20px] xl:w-[144px]"
+            >
+              Basic
+            </button>
+            <p class="flex flex-col items-center">
+              <span class="text-5xl xl:text-[64px]">$300.00</span>
+              <span class="text-[16px] text-[#525252] xl:text-[20px]"
+                >/Per day</span
+              >
+            </p>
+          </div>
+          <button
+            class="rounded-[30px] py-[12px] px-[53px] border border-gray-400 xl:text-[20px] xl:py-[14px] xl:px-[71px]"
+          >
+            Order
+          </button>
+        </div>
+        <div
+          class="snap-start rounded-[30px] border flex flex-col gap-[77px] px-[63px] py-[39px] bg-[#FFF5DE] w-[341px] h-[341px] xl:w-[453px] xl:h-[452px] xl:py-[64px] xl:px-[84px] xl:justify-between"
+        >
+          <div class="flex flex-col items-center gap-[24px]">
+            <button
+              class="rounded-[30px] bg-[#EAB308] py-[10px] px-[36px] text-[16px] xl:py-[13px] xl:px-[51px] xl:text-[20px] xl:w-[144px]"
+            >
+              Basic
+            </button>
+            <p class="flex flex-col items-center">
+              <span class="text-5xl xl:text-[64px]">$500.00</span>
+              <span class="text-[16px] text-[#525252] xl:text-[20px]"
+                >/Per day</span
+              >
+            </p>
+          </div>
+          <button
+            class="rounded-[30px] bg-black text-white py-[12px] px-[53px] border border-gray-400 xl:text-[20px] xl:py-[14px] xl:px-[71px]"
+          >
+            Order
+          </button>
+        </div>
+        <div
+          class="snap-start rounded-[30px] border flex flex-col gap-[77px] px-[63px] py-[39px] bg-white w-[341px] h-[341px] xl:w-[453px] xl:h-[452px] xl:py-[64px] xl:px-[84px] xl:justify-between"
+        >
+          <div class="flex flex-col items-center gap-[24px]">
+            <button
+              class="rounded-[30px] bg-[#FFF5DE] py-[10px] px-[36px] text-[16px] xl:py-[13px] xl:px-[51px] xl:text-[20px] xl:w-[144px]"
+            >
+              Basic
+            </button>
+            <p class="flex flex-col items-center">
+              <span class="text-5xl xl:text-[64px]">$800.00</span>
+              <span class="text-[16px] text-[#525252] xl:text-[20px]"
+                >/Per day</span
+              >
+            </p>
+          </div>
+          <button
+            class="rounded-[30px] py-[12px] px-[53px] border border-gray-400 xl:text-[20px] xl:py-[14px] xl:px-[71px]"
+          >
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-[#FFF9ED] pt-[48px] flex flex-col items-center gap-[12px] relative w-[114.7%] left-[-24px] xl:w-[135.19%] xl:left-[-250px] xl:pt-[130px] xl:flex-row xl:pl-[250px] xl:gap-[120px]"
+    >
+      <div class="flex flex-col items-center gap-[12px]">
+        <p class="text-[#2C2C2C] text-[16px] xl:text-[18px]">
+          Booking Calendar
+        </p>
+        <p class="text-[#1C1C1C] text-[36px] xl:text-7xl">Next events</p>
+      </div>
+
+      <p
+        class="text-[#5C5C5C] text-[16px] text-center w-[342px] xl:w-[575px] xl:text-[18px]"
+      >
+        Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur. Dicta sunt
+        explicabo.
+      </p>
+      <button
+        class="rounded-[30px] flex gap-[9px] py-[12px] mt-[24px] px-[18px] border-1 border-gray-500 xl:text-[18px] xl:py-[14px] xl:px-[31px]"
+      >
+        View More <img src="./public/black-arrow.svg" alt="black-arrow" />
+      </button>
+    </div>
+
+    <div
+      class="snap-y overflow-y-hidden w-[114.7%] relative left-[-24px] pt-[48px] bg-[#FFF9ED] gap-[50px] flex items-center justify-center xl:mt-[0px] xl:w-[135%] xl:left-[-250px] xl:flex-col xl:h-auto xl:pt-[78px]"
+    >
+      <div
+        class="snap-start w-full flex flex-col items-center gap-[28px] xl:flex-row xl:gap-[32px] xl:w-[1420px]"
+      >
+        <div class="flex flex-col items-center xl:gap-[5px]">
+          <p class="text-[36px] xl:text-7xl">18</p>
+          <p class="text-[#525252] text-[16px] xl:text-[18px] xl:w-[85px]">
+            Nov, 2024
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] xl:flex-row xl:items-center xl:gap-[21px]"
+        >
+          <img
+            class="xl:w-[301px] xl:h-[287px]"
+            src="./public/image-dev.png"
+            alt="image"
+          />
+          <div class="flex flex-col gap-[12px]">
+            <p class="text-[36px] text-center xl:text-5xl xl:w-[654px]">
+              Beachside wedding ceremony
+            </p>
+            <div class="flex flex-col items-center gap-[15px] xl:flex-row">
+              <p class="xl:text-[28px]">Chicago</p>
+              <img
+                class="w-[54px] h-[54px]"
+                src="./public/icon.svg"
+                alt="icon"
+              />
+              <p class="w-[331px] xl:text-[18px] xl:w-[385px]">
+                Nov 18, 2024 8:30 pm - Dec 29, 2026 10:30 pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="rounded-[30px] bg-[#FFF5DE] py-[16px] px-[53px] w-[138px] xl:ml-[232px] xl:text-[24px] xl:py-[10px] xl:px-[45px]"
+        >
+          Free
+        </button>
+      </div>
+      <div
+        class="snap-start w-full flex flex-col items-center gap-[28px] xl:flex-row xl:gap-[32px] xl:w-[1420px]"
+      >
+        <div class="flex flex-col items-center xl:gap-[5px]">
+          <p class="text-[36px] xl:text-7xl">19</p>
+          <p class="text-[#525252] text-[16px] xl:text-[18px] xl:w-[85px]">
+            Nov, 2024
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] xl:flex-row xl:items-center xl:gap-[21px]"
+        >
+          <img
+            class="xl:w-[301px] xl:h-[287px]"
+            src="./public/image-dev-2.png"
+            alt="image"
+          />
+          <div class="flex flex-col gap-[12px]">
+            <p class="text-[36px] text-center xl:text-5xl xl:w-[654px]">
+              Beachside wedding ceremony
+            </p>
+            <div class="flex flex-col items-center gap-[15px] xl:flex-row">
+              <p class="xl:text-[28px]">Chicago</p>
+              <img
+                class="w-[54px] h-[54px]"
+                src="./public/icon.svg"
+                alt="icon"
+              />
+              <p class="w-[331px] xl:text-[18px] xl:w-[385px]">
+                Nov 18, 2024 8:30 pm - Dec 29, 2026 10:30 pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="rounded-[30px] bg-[#FFF5DE] py-[16px] px-[53px] w-[138px] xl:ml-[232px] xl:text-[24px] xl:py-[10px] xl:px-[45px]"
+        >
+          Free
+        </button>
+      </div>
+      <div
+        class="snap-start w-full flex flex-col items-center gap-[28px] xl:flex-row xl:gap-[32px] xl:w-[1420px]"
+      >
+        <div class="flex flex-col items-center xl:gap-[5px]">
+          <p class="text-[36px] xl:text-7xl">27</p>
+          <p class="text-[#525252] text-[16px] xl:text-[18px] xl:w-[85px]">
+            Nov, 2024
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-[24px] xl:flex-row xl:items-center xl:gap-[21px]"
+        >
+          <img
+            class="xl:w-[301px] xl:h-[287px]"
+            src="./public/image-dev-3.png"
+            alt="image"
+          />
+          <div class="flex flex-col gap-[12px]">
+            <p class="text-[36px] text-center xl:text-5xl xl:w-[654px]">
+              Beachside wedding ceremony
+            </p>
+            <div class="flex flex-col items-center gap-[15px] xl:flex-row">
+              <p class="xl:text-[28px]">Chicago</p>
+              <img
+                class="w-[54px] h-[54px]"
+                src="./public/icon.svg"
+                alt="icon"
+              />
+              <p class="w-[331px] xl:text-[18px] xl:w-[385px]">
+                Nov 18, 2024 8:30 pm - Dec 29, 2026 10:30 pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="rounded-[30px] bg-[#FFF5DE] py-[16px] px-[53px] w-[138px] xl:ml-[232px] xl:text-[24px] xl:py-[10px] xl:px-[45px]"
+        >
+          Free
+        </button>
+      </div>
+    </div>
+
+    <img
+      class="mt-[48px] h-[58px] absolute left-0 xl:hidden"
+      src="public/Frame 94.png"
+      alt="image"
+    />
+
+    <img
+      class="hidden mt-[100px] absolute left-0 xl:flex"
+      src="public/Frame 95.png"
+      alt="image"
+    />
+
+    <!--Footer section-->
+    <div
+      class="bg-[url(/public/bg-image-event.jpg)] relative left-[-24px] w-[114.7%] mt-[106px] py-[48px] px-[24px] flex flex-col gap-[48px] text-white xl:mt-[247px] xl:w-[135.2%] xl:left-[-250px] xl:flex-row xl:gap-[90px] xl:py-[130px] xl:px-[250px]"
+    >
+      <div class="flex flex-col gap-[24px]">
+        <div class="flex flex-col xl:items-center">
+          <p class="text-[36px] text-center xl:text-7xl">Crafting</p>
+          <p
+            class="text-[36px] text-center xl:text-7xl text-[#FFD67E] xl:hidden"
+          >
+            Extraordinary
+          </p>
+          <p class="text-[36px] text-center xl:text-7xl xl:hidden">
+            Events Together
+          </p>
+          <p
+            class="text-[36px] text-center xl:text-7xl hidden text-[#FFD67E] xl:flex"
+          >
+            Extraordinary <span class="text-white xl:pl-[20px]">Events</span>
+          </p>
+          <p class="text-[36px] text-center xl:text-7xl hidden xl:flex">
+            Together
+          </p>
+        </div>
+        <p
+          class="text-[16px] text-center text-[#D4D4D4] w-[339px] xl:text-[18px] xl:w-[655px] xl:text-start"
+        >
+          Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitacion
+          ullamco. sed do euismod tempor incidunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitacion ullamco  
+        </p>
+        <div
+          class="flex flex-row items-center justify-center gap-[18px] xl:justify-start"
+        >
+          <img src="/public/facebook-acon.svg" alt="" />
+          <img src="/public/x-com-icon.svg" alt="" />
+          <img src="/public/you-tube-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-[15px] xl:gap-[17px]">
+        <p class="text-[20px] text-[#FFD67E] text-center xl:text-[24px]">
+          Links
+        </p>
+        <p class="text-[16px] text-center xl:text-[22px]">Homepage</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Pages</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Event</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Portfolio</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Blog</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Shop</p>
+        <p class="text-[16px] text-center xl:text-[22px]">Contact us</p>
+      </div>
+      <div class="flex flex-col xl:gap-[28px]">
+        <p class="text-[22px] text-[#FFD67E] xl:text-[32px]">
+          Subscribe For Our Blog & Article
+        </p>
+        <div
+          class="flex items-center justify-between px-[5px] gap-[10px] bg-[#404040] h-[49px] rounded-[30px] xl:w-[472px] xl:h-[71px]"
+        >
+          <input
+            class="ml-[25px] text-[12px] xl:text-[20px] xl:ml-[44px]"
+            placeholder="your email here"
+            type="email"
+          />
+          <button
+            class="w-[106px] h-[40px] bg-[#FFD67E] text-[14px] text-black rounded-[30px] xl:h-[59px] xl:w-[156px] xl:text-[18px]"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-[#171717] h-[102px] w-[114.7%] flex flex-col items-center py-[11px] px-[24px] relative left-[-24px] gap-[18px] xl:flex-row xl:w-[135.2%] xl:left-[-250px] xl:py-[24px] xl:px-[250px] xl:justify-between"
+    >
+      <img
+        class="w-[100px] h-[38px] xl:w-[139px] xl:y-[53px]"
+        src="/public/Logo.svg"
+        alt="logo"
+      />
+
+      <p class="text-[14px] text-white xl:text-[18px]">
+        Copyright © 2024 Rometheme. All Rights Reserved.
+      </p>
+    </div>
+
+    <!--TYPE SCRIPT-->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
